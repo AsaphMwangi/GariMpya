@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_card"
+    android:layout_width="150dp"
+    android:layout_height="170dp"
+    android:layout_margin="10dp"
+    android:elevation="15dp"
+    app:cardElevation="15dp"
+    app:cardMaxElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/product"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/vehicle_image"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:srcCompat="@drawable/image_rep" />
+
+        <TextView
+            android:id="@+id/vehicle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="name"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/vehicle_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_name"
+            android:layout_alignStart="@+id/vehicle_image"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="price"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vehicle_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_price"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="location"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/vehicle_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/vehicle_location"
+            android:fontFamily="sans-serif-condensed"
+            android:text="year"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/vehicle_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/vehicle_year"
+            android:fontFamily="sans-serif-condensed"
+            android:text="mileage"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

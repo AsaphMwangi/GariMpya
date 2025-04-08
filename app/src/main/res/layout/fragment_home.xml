@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fifth"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/today_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:labelFor="@id/today_pick_container"
+        android:text="Today's Pick"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/today_pick_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/today_pick"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/today_pick_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+
+            android:orientation="horizontal"
+            android:overScrollMode="always"
+            android:scrollbars="horizontal"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sedan_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/today_pick_container"
+        android:layout_alignStart="@+id/today_pick_container"
+        android:layout_marginTop="15dp"
+        android:text="Sedan"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/sedan_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sedan_title"
+        android:layout_alignStart="@+id/today_pick_container"
+        android:layout_alignEnd="@+id/today_pick_container"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sedan_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:scrollbars="horizontal"
+            android:overScrollMode="always"
+            android:fadeScrollbars="false"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_recommendation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sedan_container"
+        android:layout_alignStart="@+id/sedan_container"
+        android:layout_alignEnd="@+id/sedan_container"
+        android:layout_marginTop="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/other_recommendation_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:overScrollMode="always"
+            android:fadeScrollbars="false"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
