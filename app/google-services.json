@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "781879054212",
+    "firebase_url": "https://asaph-mwangi-default-rtdb.firebaseio.com",
+    "project_id": "asaph-mwangi",
+    "storage_bucket": "asaph-mwangi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781879054212:android:0f4ffd7dded319f20697d1",
+        "android_client_info": {
+          "package_name": "com.asaphmwangi.asaph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781879054212-0imvi2ovrf27jubpovjvvkfc6lurmccp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3C77eFX9WRt7q6D88FeaiPMjpU0N1_D4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781879054212-0imvi2ovrf27jubpovjvvkfc6lurmccp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781879054212:android:38b453be7256ff9e0697d1",
+        "android_client_info": {
+          "package_name": "com.asaphmwangi.asaphbrowser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781879054212-0imvi2ovrf27jubpovjvvkfc6lurmccp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3C77eFX9WRt7q6D88FeaiPMjpU0N1_D4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781879054212-0imvi2ovrf27jubpovjvvkfc6lurmccp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781879054212:android:0d312dfaecf50cc10697d1",
+        "android_client_info": {
+          "package_name": "com.asaphmwangi.lmovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781879054212-0imvi2ovrf27jubpovjvvkfc6lurmccp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3C77eFX9WRt7q6D88FeaiPMjpU0N1_D4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781879054212-0imvi2ovrf27jubpovjvvkfc6lurmccp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781879054212:android:36ebe97c844224e90697d1",
+        "android_client_info": {
+          "package_name": "online.asaphmwangi.garimpya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781879054212-0imvi2ovrf27jubpovjvvkfc6lurmccp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3C77eFX9WRt7q6D88FeaiPMjpU0N1_D4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781879054212-0imvi2ovrf27jubpovjvvkfc6lurmccp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
