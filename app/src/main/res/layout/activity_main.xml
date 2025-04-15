@@ -25,11 +25,25 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:fontFamily="@font/poppins_bold"
+            android:padding="15dp"
             android:text="Get Your Dream Car"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:elevation="15dp"
+            app:srcCompat="@drawable/search" />
 
     </RelativeLayout>
 
@@ -37,6 +51,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/fifth"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +59,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
-            android:name="online.asaphmwangi.garimpya.HomeFragment"
+            android:name="online.asaphmwangi.garimpya.bottom_menu.HomeFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </ScrollView>

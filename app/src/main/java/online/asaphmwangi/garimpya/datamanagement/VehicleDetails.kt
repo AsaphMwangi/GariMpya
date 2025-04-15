@@ -1,4 +1,4 @@
-package online.asaphmwangi.garimpya
+package online.asaphmwangi.garimpya.datamanagement
 
 data class VehicleDetails(val carImage: Int,
                           val carName: String,

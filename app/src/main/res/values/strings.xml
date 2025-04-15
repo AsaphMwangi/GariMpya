@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Gari Mpya</string>
+    <string name="login_link"><u>Login if you already have an Account</u></string>
+    <string name="signup_link"><u>Create an Account</u></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

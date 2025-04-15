@@ -1,4 +1,4 @@
-package online.asaphmwangi.garimpya
+package online.asaphmwangi.garimpya.datamanagement
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import online.asaphmwangi.garimpya.R
 
 class VehicleAdapter(private val vehicleList: List<VehicleDetails>) : RecyclerView.Adapter<VehicleAdapter.VehicleViewHolder>()
 
