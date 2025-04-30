@@ -2,8 +2,11 @@ package online.asaphmwangi.garimpya
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -19,10 +22,13 @@ import com.google.android.material.shape.ShapeAppearanceModel
 import com.google.firebase.auth.FirebaseAuth
 import online.asaphmwangi.garimpya.authentication.FirebaseAuthentication
 import online.asaphmwangi.garimpya.authentication.LoginActivity
+import online.asaphmwangi.garimpya.bottom_menu.SettingsActivity
 
 class MainActivity : AppCompatActivity() {
 
     val authManager = FirebaseAuthentication()
+    private lateinit var bottom_nav: BottomNavigationView
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,10 +46,32 @@ class MainActivity : AppCompatActivity() {
         window.statusBarColor = ContextCompat.getColor(this, R.color.fifth)
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = false
 
-        checkLoginStatus()
 
+        checkLoginStatus()
+        setBadge(5)
+    }
+
+
+    //Wishlist badge
+    fun setBadge(number_of_vehicles: Int)
+    {
+        bottom_nav = findViewById(R.id.bottomNavigationView)
+        val badge = bottom_nav.getOrCreateBadge(R.id.wishlist)
+
+        // Customize badge
+        badge.isVisible = true
+        badge.number = number_of_vehicles // Show number, e.g. 5 new notifications
+        badge.backgroundColor = ContextCompat.getColor(this, R.color.red)
+        badge.badgeTextColor = ContextCompat.getColor(this, R.color.ic_launcher_background)
+        badge.horizontalOffset = -0
+        badge.verticalOffset = 0
 
     }
+
+
+
+
+    //Check Login Status
     private fun checkLoginStatus()
     {
         if (!authManager.isLoggedIn()) {
@@ -52,6 +80,8 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    //Animation when opening the search activity
     fun openSearch(view: View)
     {
         val intent = Intent(this,SearchActivity::class.java)
@@ -70,6 +100,27 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+
+    //Open settings
+    fun openSettings(item: MenuItem) {
+        val intent = Intent(this,SettingsActivity::class.java)
+        startActivity(intent)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            // API 34 and above
+            overrideActivityTransition(
+                Activity.OVERRIDE_TRANSITION_OPEN,
+                R.anim.slide_in_right,
+                R.anim.slide_out_left
+            )
+        } else {
+            // Below API 34
+            @Suppress("DEPRECATION")
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
+    }
+
+
     //State management
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
@@ -80,4 +131,6 @@ class MainActivity : AppCompatActivity() {
         val savedText = savedInstanceState.getString("user_input")
        // editText.setText(savedText)
     }
+
+
 }

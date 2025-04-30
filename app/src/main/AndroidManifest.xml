@@ -13,6 +13,12 @@
         android:theme="@style/Theme.GariMpya"
         tools:targetApi="31">
         <activity
+            android:name=".accountsettings.PrivacyAndSecurityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".accountsettings.PersonalInformationActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
