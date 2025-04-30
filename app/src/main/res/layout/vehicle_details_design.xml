@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fifth">
+
+    <com.google.android.material.carousel.MaskableFrameLayout
+        android:id="@+id/carousel_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:minHeight="300dp"
+        app:shapeAppearance="?attr/shapeAppearanceCornerExtraLarge">
+
+        <ImageView
+            android:id="@+id/carousel_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop" />
+    </com.google.android.material.carousel.MaskableFrameLayout>
+
+    <TextView
+        android:id="@+id/vehicle_details_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicle_details_name"
+        android:layout_alignLeft="@id/vehicle_details_name"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Vehicle Price"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/vehicle_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carousel_item_container"
+        android:layout_alignLeft="@id/carousel_item_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Vehicle Name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/vehicle_details_year_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicle_details_price"
+        android:layout_alignLeft="@id/vehicle_details_price"
+        android:gravity="center"
+        android:text="Year"
+        android:textColor="@color/bottom_nav_item_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/vehicle_details_year_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicle_details_price"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/vehicle_details_year_title"
+        android:text="TextView"
+        android:textColor="@color/second" />
+
+    <TextView
+        android:id="@+id/vehicle_details_mileage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicle_details_price"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/vehicle_details_year_value"
+        android:gravity="center"
+        android:text="Mileage"
+        android:textColor="@color/bottom_nav_item_text_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/vehicle_details_mileage_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicle_details_price"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/vehicle_details_mileage_title"
+        android:gravity="center"
+        android:text="Mileage Value"
+        android:textColor="@color/second"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/vehicle_details_description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicle_details_year_title"
+        android:layout_alignLeft="@id/vehicle_details_year_title"
+        android:layout_marginTop="15dp"
+        android:text="Description"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/vehicle_details_decription_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicle_details_description_title"
+        android:layout_alignLeft="@id/vehicle_details_description_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/product"
+        android:text="Vehicle details" />
+</RelativeLayout>

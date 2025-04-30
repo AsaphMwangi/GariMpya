@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/account_circle"
+        android:onClick="openPersonal"
+        android:title="Personal Information" />
+    <item
+        android:icon="@drawable/security_icon"
+        android:onClick="openPrivacySecurity"
+        android:title="Privacy and Security" />
+</menu>

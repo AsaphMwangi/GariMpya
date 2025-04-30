@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/privacy_policy"
+        android:onClick="openPrivacyPolicy"
+        android:title="Privacy Policy" />
+    <item
+        android:id="@+id/terms_policy"
+        android:onClick="openTermsPolicy"
+        android:title="Terms and Conditions" />
+    <item
+        android:id="@+id/security_policy"
+        android:onClick="openSecurityPolicy"
+        android:title="Security Policy" />
+</menu>
